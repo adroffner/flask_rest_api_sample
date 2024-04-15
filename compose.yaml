@@ -3,12 +3,12 @@
 version: '2'
 services:
   web:
-    image: com.example.dev/flask_rest_api_sample:latest
+    image: com.example.dev/flask_rest_api_sample:1.0
     ports:
       - "8030:8030"
     environment:
       - "SERVER_TIER=prod"
-    user: www-data
+    user: apache
     logging:
       driver: "json-file"
       options:

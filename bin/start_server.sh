@@ -8,7 +8,7 @@ WEB_USER="apache" # CentOS
 
 PORT=8001
 
-/usr/local/bin/mod_wsgi-express start-server \
+mod_wsgi-express start-server \
     --user "${WEB_USER}" \
     --maximum-requests=250 \
     --access-log \
