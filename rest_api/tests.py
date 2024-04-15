@@ -1,6 +1,8 @@
 import json
 from unittest import TestCase, mock
 
+from rest_api import server
+
 
 class RestApiTestCases(TestCase):
     """ Sample REST API Test Cases
@@ -38,7 +40,7 @@ class RestApiTestCases(TestCase):
     def test_name_get_url(self):
         """ Prove the REST API URL '/sample/name' shows a name and comment """
 
-        resp = self.app.get('/sample/name')
-        self.assertEqual(json.loads(resp.data.decode('utf8')), self.SERVER_LIST_MSG)
+        resp = self.app.get('/restx/sample/server_name')
+        self.assertEqual(json.loads(resp.data.decode('utf8')), self.SERVER_NAME_MSG)
         self.assertEqual(resp.status_code, 200)
 

@@ -20,7 +20,7 @@ CORS(app, resources={
     }
 })
 api = Api(app,
-          prefix='sample',  # no prefix, but there should be!
+          prefix='/restx',
           version='1.0',
           title='Server Configuration for Flask-RESTX',
 
