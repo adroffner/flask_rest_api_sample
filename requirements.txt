@@ -1,6 +1,6 @@
 # Private PyPI Server:
---trusted-host=pypi-server.example.com
---extra-index-url=http://pypi-server.example.com:8100/simple/
+## --trusted-host=pypi-server.example.com
+## --extra-index-url=http://pypi-server.example.com:8100/simple/
 
 flask-cors>=3.0.7
 # DEPRECATED!: flask_restplus>=0.12.4-dev0
