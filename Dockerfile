@@ -10,13 +10,13 @@ FROM com.example.dev/centos7-python3-mod_wsgi:3.8.r1
 USER root
 
 # =============================================================================
-# Proxy settings
+# Proxy settings: When behind a firewall ONLY!
 # =============================================================================
-ENV http_proxy="http://one.proxy.example.com:8080"
-ENV https_proxy="http://one.proxy.example.com:8080"
-ENV HTTPS_PROXY="http://one.proxy.example.com:8080"
-ENV HTTPS_PROXY="http://one.proxy.example.com:8080"
-ENV no_proxy="127.0.0.1"
+## ENV http_proxy="http://one.proxy.example.com:8080"
+## ENV https_proxy="http://one.proxy.example.com:8080"
+## ENV HTTPS_PROXY="http://one.proxy.example.com:8080"
+## ENV HTTPS_PROXY="http://one.proxy.example.com:8080"
+## ENV no_proxy="127.0.0.1"
 
 # =============================================================================
 # Install ENTRYPOINT shell scripts ...
