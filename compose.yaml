@@ -1,0 +1,19 @@
+# Docker Image: Sample flask-RESTX API
+# =============================================================================
+version: '2'
+services:
+  web:
+    image: com.example.dev/flask_rest_api_sample:1.0
+    ports:
+      - "8030:8030"
+    environment:
+      - "SERVER_TIER=prod"
+    user: apache
+    logging:
+      driver: "json-file"
+      options:
+        labels: "elk_index_value"
+        max-size: "50m"
+        max-file: "20"
+    labels:
+      elk_index_value: "flask-rest-api-sample"
